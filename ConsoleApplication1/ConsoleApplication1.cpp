@@ -7,11 +7,8 @@
 int main()
 {
     std::cout << "Hell1 Wold!\n";
-<<<<<<< HEAD
-    std::cout << "Hello !\n";
-=======
-    std::cout << "Hell1 Wold 2 !\n";
->>>>>>> e0f89b25c868e55baa9cd913d08bf85c8cec1dd4
+
+
 
 }
 
