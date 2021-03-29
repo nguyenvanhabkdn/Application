@@ -7,7 +7,7 @@
 int main()
 {
     std::cout << "Hell1 Wold!\n";
-    std::cout << "Hell1 Wold mothe !\n";
+    std::cout << "Hell1 Wold !\n";
 
 }
 
