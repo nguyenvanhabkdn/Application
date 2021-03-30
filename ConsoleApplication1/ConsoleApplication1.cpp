@@ -4,10 +4,33 @@
 #include <iostream>
 #include <stdio.h>
 
+
+long sum(int n)
+{
+    long sum = 0;
+    int i;
+    for (int i = 0;i <= n;i++)
+    {
+        if (i % 2 == 0)
+        {
+            sum += i;
+
+        }
+
+    }
+    return sum;
+
+}
 int main()
 {
     std::cout << "Hell1 Wold!\n";
+    int n;
+    printf("Enter an integer: ");
+    scanf_s("%d",&n);
 
+    long result = sum(n);
+    printf("result= %ld \n",result);
+    return 0;
 
 
 }
