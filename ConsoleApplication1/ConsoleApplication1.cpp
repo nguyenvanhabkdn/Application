@@ -3,8 +3,8 @@
 
 #include <iostream>
 #include <stdio.h>
-
-
+#include <stdlib.h>
+using namespace std;
 long sum(int n)
 {
     long sum = 0;
@@ -21,17 +21,58 @@ long sum(int n)
     return sum;
 
 }
-int main()
+
+double calculator()
 {
-    std::cout << "Hell1 Wold!\n";
-    int n;
-    printf("Enter an integer: ");
-    scanf_s("%d",&n);
+    double a, b; 
+    char op;
+    cout << "input a=";
+    cin >> a;
+    cout << "\n";
+    cout << "input operator ";
+    cin >> op;
+    cout << "input b=";
+    cin >> b;
+    cout << "\n";
+    if (op == '+')
+    {
+        return a + b;
 
-    long result = sum(n);
-    printf("result= %ld \n",result);
-    return 0;
+    }
+    else if (op == '-')
+    {
+        return a - b;
 
+    }
+    else
+        return NULL;
+}
+
+
+struct student {
+    string idNumber;
+    char name[100];
+    char major[20];
+    double gpa;
+
+};
+
+
+void main()
+{
+    int num[3][3] = { {1,2,3}, {4,2,5},{6,6,77} };
+    cout << sizeof(num[2][2]);
+    for (int i = 0;i < 3;i++)
+    {
+        for (int j = 0;j < 3;j++)
+
+        {
+            cout << &num[i][j]<<"\n";
+
+        }
+
+
+    }
 
 }
 
