@@ -27,7 +27,6 @@ double calculator()
     double a, b; 
     char op;
     cout << "input a=";
-    cout << "input a=";
     cin >> a;
     cout << "\n";
     cout << "input operator ";
